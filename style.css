@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500&family=Noto+Sans+Duployan:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.home{
+    background: url(https://themewagon.github.io/feane/images/hero-bg.jpg) no-repeat;
+    background-size: cover ;
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+@media (max-width:700px) {
+    .home{
+        background-position: 50%;
+    }
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+.header .logo{
+    color: white;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+.header .menu-btn{
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    color: white;
+    display: inline-block;
+}
+nav ul li a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+nav ul li a:hover, nav ul li a.active{
+    color: rgb(247, 187, 20);
+}
+.icons i{
+    color: white;
+    display: inline-block;
+    align-items: center; 
+    margin: 12px;
+    font-size: 15px;
+}
+.icons i:hover{
+    color: rgb(247, 187, 20); ;
+
+}
+button{
+    color: white;
+    font-size: 16px;
+    background-color: rgb(247, 187, 20);
+    border: none;
+    text-align: center;
+    padding:  10px 30px;
+    border-radius: 25px;
+}
+.container{
+    margin: 100px 50% 100px 60px;
+    max-width: 100%;
+}
+.container h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+.container p{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.container button{
+    margin-top: 25px;
+    max-width: 150px;
+}
+.col{
+    width: 550px;
+    height: 210px;
+    background-color: rgb(46, 45, 47);
+    display: flex;
+    align-items: center; 
+    border-radius: 6px;
+}
+.col img{
+    max-width: 170px;
+    min-height: 170px;
+    border: 5px solid rgb(247, 187, 20) ;
+    border-radius: 100px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col h1{
+    font-size: 27px;
+    color: rgb(249, 229, 229);
+    font-family: 'Dancing Script', cursive ;
+    line-height: 40px;
+}
+.col p{
+    font-size: 40px;
+    color: rgb(249, 229, 229);
+    font-family: 'Dancing Script', cursive ;
+    line-height: 60px;
+}
+.col p span{
+    font-size: 20px;
+}
+.list{
+    margin-top: 90px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: white;
+    max-width: 100%;
+    min-height: 50vh;
+    display: flex;
+}
+.col .col-content{
+    margin-left: 20px;
+}
+#col2{
+    margin-left: 45px;
+}
+.menu{
+    max-width: 100%;
+    min-height: 180vh;
+    position: relative;
+    margin: 60px;
+}
+.menu h1{
+    font-family: 'Dancing Script', cursive ;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+.menu-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 400px;
+}
+.menu-nav ul li{
+    display: inline-block;
+}
+.menu-nav ul li a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300px;
+}
+.menu-nav ul li a:hover,
+.menu-nav ul li a:active{
+    color: white;
+    background-color: rgb(13, 13, 13);
+    border-radius: 25px;
+    padding: 4px 6px ;
+    transition: 3 sec;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:600px)
+{
+    .col-menu{
+        margin-top: 10px;
+        width: 300px;
+        margin-left: 3px;
+        margin-right: 10px;
+    }
+    .col-menu img{
+        padding: 15px 80px;
+        max-width: 290px;
+        min-height: 90px;
+    }
+    .menu-img{
+        max-width: 300px;
+        min-height: 90px;
+    }
+}
+.col-menu{
+    margin-top: 20px;
+    width: 355px;
+    margin-left: 10px;
+    margin-right: 20px;
+    align-items: center;
+    background-color: rgb(49, 49, 52);
+    border-radius: 17px;
+}
+.col-menu img{
+    align-items: center;
+    padding: 25px 100px;
+    max-width: 345px;
+    min-height: 100px;
+}
+.menu-img{
+    background-color: rgb(240, 241, 241);
+    border-radius: 15px 15px 0px 26px;
+    align-items: center;
+    max-width: 355px;
+    min-height: 100px;
+}
+.menu-content{
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 25px;
+}
+.menu-content h1{
+    font-size: 16px;
+    font-family: 'Noto Sans Duployan', sans-serif;
+}
+.menu-content p{
+    margin-top: 10px;
+    line-height: 19px;
+    font-size: 12px;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+.menu-content h3{
+    font-size: 16px;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+.menu-content a{
+    color: white;
+    font-size: 14px;
+    background-color: rgb(247, 187, 20);
+    border: none;
+    text-align: center;
+    padding:  12px 12px;
+    border-radius: 100px;
+    margin-left: 250px;
+}
+.menu-content .menu-parent{
+    display: flex;
+    margin-top: 20px;
+}
+.menulist2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.viewmore{
+    text-align: center;
+    margin-top: 30px;
+}
+.about{
+    background-color: black;
+    display: flex;
+    margin-top: 30px;
+    max-width: 100%;
+    min-height: 113vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-content h1{
+    font-size: 45px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.about-content p{
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+.about-content img{
+    max-width: 450px;
+    min-height: 100vh;
+    margin-left: 70px;
+}
+.about-content .we-are{
+    margin-left: 80px ;
+    margin-right: 80px;
+}
+.about-content a button{
+    margin-top: 20px;
+}
+.booktable{
+    max-width: 100%;
+    min-height: 100vh;
+    margin:60px 60px 0 60px;
+}
+.bookrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bookrow h1{
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive ;
+}
+.bookrow .bcol .bform{
+align-items: center;
+}
+.bookrow .bcol{
+    height: 420px;   
+} 
+input{
+    width: 550px;
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height:45px; 
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.bookrow .bmap{
+    margin-top: 78px;
+    border-radius: 10px;
+}
+.bmap iframe{
+    border-radius: 10px;
+}
+.review{
+    max-width: 100%;
+    margin:0px 60px 0px 60px;
+    min-height: 80vh;
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 25px;}
+.rrow{
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.rcol{
+    background-color: rgb(47, 47, 48);
+    color: white;
+    padding: 20px;
+    height: 150px;
+}
+.rcol p{
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.rcol h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+#rcol2{
+    margin-left: 10px;
+}
+#rcol1{
+    margin-right: 10px;
+}
+.rimage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 695px;
+}
+.rimage img{
+    border: 4px solid rgb(240, 190, 54);
+    border-radius: 300px;
+    max-width: 100px;
+}
+footer{
+    background-color: rgb(45, 46, 46);
+    margin-top: 30px;
+    color: white;
+    min-height: 80vh;
+    max-width: 100%;
+}
+.footr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fcol{
+    max-width: 300px;
+    margin-top: 80px;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.fcol h1{
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Dancing Script', cursive;
+}
+.fcol a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.fcol span{
+    margin-left: 12px;
+}
+.fcol p{
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+}
+.fcol ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fcol li{
+    display: inline-block;
+    text-decoration: none;
+}
+.fcol li a{
+    margin-top: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    margin-left: 0px;
+}
+.fcol li a i{
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    margin-left: 2px;
+}
+footer p{
+    margin-top: 40px;
+}
+header .menu-btn i{
+    color: white;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width:865px) 
+{
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .header .menu-btn{
+        display: none;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    .home{
+        background-position: 50%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 4%;
+    }
+    .header .logo{
+        font-size: 30px;
+    }
+    .icons i{
+        color: white;
+        display: inline-block;
+        align-items: center; 
+        margin: 12px;
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+        padding:  8px 20px;
+    }
+    .container{
+        margin: 60px 30% 60px 30px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    .container p{
+        font-size: 12.5px;
+        margin-top: 15px;
+        line-height: 19px;
+    }
+    .container button{
+        margin-top: 20px;
+        max-width: 100px;
+    }
+    .col{
+        width: 250px;
+        height: 310px;
+        display: inline;
+    }
+    .col img{
+        max-width: 140px;
+        min-height: 140px;
+        margin-left: 55px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .col .col-content{
+        text-align: center;
+    }
+    .col h1{
+        font-size: 23px;
+        line-height: 20px;
+    }
+    .col p{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .col p span{
+        font-size: 10px;
+    }
+    .list{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .menu{
+        max-width: 100%;
+        min-height: 180vh;
+        position: relative;
+        margin: 30px;
+    }
+    .menu h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .menu-nav ul{
+        padding: 10px 100px;
+    }
+    .menu-nav ul li{
+        margin-left: 20px;
+    }
+    .menu-nav ul li a{
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 300px;
+    }
+    .menu-list{
+        display: inline;
+        align-items: center;
+    }
+    .col-menu{
+        margin-top: 20px;
+        width: 350px;
+        margin-left: 20%;
+        margin-right: 20px;
+        align-items: center;
+        background-color: rgb(49, 49, 52);
+        border-radius: 17px;
+    }
+    .col-menu img{
+        align-items: center;
+        padding: 25px 100px;
+        max-width: 345px;
+        min-height: 100px;
+    }
+    .menu-img{
+        background-color: rgb(240, 241, 241);
+        border-radius: 15px 15px 0px 26px;
+        align-items: center;
+        max-width: 355px;
+        min-height: 100px;
+    }
+    .menu-content{
+        text-align: justify;
+        font-size: 15px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+    .menu-content h1{
+        font-size: 16px;
+        font-family: 'Noto Sans Duployan', sans-serif;
+    }
+    .menu-content p{
+        margin-top: 10px;
+        line-height: 19px;
+        font-size: 12px;
+        font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    .menu-content h3{
+        font-size: 16px;
+        font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    .menu-content a{
+        color: white;
+        font-size: 14px;
+        background-color: rgb(247, 187, 20);
+        border: none;
+        text-align: center;
+        padding:  12px 12px;
+        border-radius: 100px;
+        margin-left: 250px;
+    }
+    .menu-content .menu-parent{
+        display: flex;
+        margin-top: 20px;
+    }
+    .menulist2{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .viewmore{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about{
+        background-color: black;
+        display: flex;
+        margin-top:5%;
+        max-width: 100%;
+        min-height: 60vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-content h1{
+        font-size: 30px;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+    }
+    .about-content p{
+        margin-top: 10px;
+        text-align: justify;
+        color: white;
+        font-size: 13px;
+        line-height: 22px;
+        font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    .about-content img{
+        display: none;
+    }
+    .about-content .we-are{
+        margin-left: 80px ;
+        margin-right: 80px;
+    }
+    .about-content a button{
+        margin-top: 20px;
+    }
+    .booktable{
+        max-width: 100%;
+        min-height: 50vh;
+        margin:30px 30px 0 60px;
+    }
+    .bookrow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bookrow h1{
+        font-size: 35px;
+        }
+    .bookrow .bcol .bform{
+        align-items: center;
+    }
+    .bookrow .bcol{
+        height: 300px;   
+    } 
+    input{
+        width: 500px;
+        margin-top: 10px;
+        padding-left: 10px;
+        line-height:35px; 
+        border-radius: 6px;
+        border: 1px solid black;
+    }
+    .bmap iframe{
+        display: none;
+    }
+    .review{
+        max-width: 100%;
+        margin:0px 60px 0px 60px;
+        min-height: 80vh;
+    }
+    .title{
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 5%;
+    }
+    .rrow{
+        min-height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .rcol{
+        padding: 20px;
+        height: 150px;
+    }
+    .rcol p{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .rcol h3{
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    #rcol2{
+        margin-left: 8px;
+    }
+    #rcol1{
+        margin-right: 10px;
+    }
+    .rimage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 695px;
+    }
+    .rimage img{
+        border: 4px solid rgb(240, 190, 54);
+        border-radius: 300px;
+        max-width: 100px;
+    }
+    footer{
+        padding-top: 0.1%;
+        min-height: 80vh;
+        max-width: 100%;
+        padding-bottom: 5%;
+    }
+    .footr{
+        display: inline;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fcol{
+        max-width: 200px;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 37%;
+        margin-right: 10%;
+    }
+    .fcol h1{
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .fcol a{
+        color: white;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .fcol span{
+        margin-left: 2%px;
+    }
+    .fcol p{
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+        line-height: 22px;
+    }
+    .fcol ul{
+        display: inline;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fcol li{
+        display: inline-block;
+        text-decoration: none;
+    }
+    .fcol li a{
+        margin-top: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        background-color: white;
+        color: black;
+        border-radius: 100px;
+        margin-left: 0px;
+    }
+    .fcol li a i{
+        align-items: center;
+        padding: 5px 5px 5px 5px;
+        font-size: 15px;
+        margin-left: 2px;
+    }
+    footer p{
+        margin-top: 40px;
+        margin-left: 6%;
+    }
+
+    
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 64px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu .open{
+    height: 240px;
+}
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-menu button{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:700px){
+    .header ul li,
+    .header .icons{
+        display: none;
+    }
+    .header .menu-btn{
+        display: block;
+        color: white;
+        
+    }
+    .dropdown-menu{
+        display: block;
+    }
+    
+}
+
